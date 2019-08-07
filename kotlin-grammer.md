@@ -105,7 +105,7 @@ fun sum(a:Int,b:Int) {
 }
 ```
 
-# kotlin Class 정리
+# kotlin Class 및 object정리
 
 ### 기본 클래스
 
@@ -208,7 +208,7 @@ class ClassName(name: String) {
 
 별도의 생성자 정의 없이 위와 같이 바로 초기화가 가능한 형태로 사용할 수 있다.
 
-생성자에 `val`로 정의하였다면 읽기만 가능하고, `var`로 정의하였다면 읽기 쓰기가 가능한 형태이다. Java에서는 `final`로 사용할 수 있다. 다음과 같은 형태로 생성자 정의가 가능합니다.
+생성자에 `val`로 정의하였다면 읽기만 가능하고, `var`로 정의하였다면 읽기 쓰기가 가능한 형태이다. Java에서는 `final`로 사용할 수 있다. 다음과 같은 형태로 생성자를 정의할 수 있다.
 
 ```kotlin
 class Person(val name, var age: Int) {
@@ -433,7 +433,7 @@ class C(override val x: Int) : A() {
 
 ### Overriding Rules
 
-다음과 같은 코드에서 다중 상속을 허용하게 됩니다.
+다음과 같은 코드에서 다중 상속을 허용하게 된다.
 
 ```kotlin
 open class A {
